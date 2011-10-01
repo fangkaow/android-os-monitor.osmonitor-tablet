@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menu_title">
+        <item>Process</item>
+        <item>Network</item>
+        <item>Connections</item>
+        <item>Misc</item>
+        <item>Log</item>
+        <item>Preferences</item>
+    </string-array>
+    
+</resources>

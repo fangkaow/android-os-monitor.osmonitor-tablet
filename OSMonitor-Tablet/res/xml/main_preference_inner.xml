@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	<com.eolwral.osmonitor.tablet.preferences.TimeSeekBar 
+	    				android:key="GlobalUpdate_Preference"
+        				android:title="@string/pref_updatetime_title"
+        				android:summary="@string/pref_updatetimesum_title"
+        				android:defaultValue="2"
+        				android:max="10" />
+ 	
+ 	<CheckBoxPreference android:defaultValue="false" 
+						android:key="CPUUsage_Preference" 
+						android:title="@string/pref_cpuusage_text" 
+						android:summary="@string/pref_cpuusagesum_text">
+	</CheckBoxPreference>
+
+	<ListPreference android:key="StatusBarColor_Preference" 
+					android:entries="@array/pref_statusbar_color_list" 
+					android:entryValues="@array/pref_statusbar_color_value" 
+					android:dialogTitle="@string/pref_iconbarcolor_title" 
+					android:dependency="CPUUsage_Preference" 
+					android:title="@string/pref_iconbarcolor_title" 
+					android:defaultValue="0">
+	</ListPreference>
+	
+	<CheckBoxPreference android:title="@string/pref_tempvalue_text" 
+	                    android:summary="@string/pref_tempvaluesum_text" 
+	                    android:dependency="CPUUsage_Preference" 
+	                    android:defaultValue="true" 
+	                    android:key="Temperature_Preference">
+	</CheckBoxPreference>
+
+	<CheckBoxPreference android:defaultValue="false" 
+						android:key="AutoStart_Preference" 
+						android:title="@string/pref_autostart_text" 
+						android:dependency="CPUUsage_Preference" 
+						android:summary="@string/pref_autostartsum_text">
+	</CheckBoxPreference>
+</PreferenceScreen>

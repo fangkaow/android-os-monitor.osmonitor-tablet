@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:gravity="right">
+   <TableLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:stretchColumns="3">
+        
+        <TableRow>
+            <TextView android:padding="3dip" 
+            		  android:textAppearance="?android:attr/textAppearanceMedium"
+            		  android:textColor="?android:attr/textColorSecondary" 
+                      android:text="@string/process_memory_total_title"/>
+
+            <TextView android:id="@+id/process_memory_total"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:textColor="?android:attr/textColorSecondary" 
+            		  android:text="0K"
+            		  android:padding="3dip" />
+
+            <TextView android:padding="3dip" 
+            		  android:text="/"/>
+
+            <TextView android:id="@+id/process_memory_free"
+                      android:textAppearance="?android:attr/textAppearanceMedium"
+                      android:textColor="?android:attr/textColorSecondary" 
+            		  android:text="0K"
+            		  android:padding="3dip" />
+					  
+			<Button android:id="@+id/sortbybutton"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" 
+			        style="?android:attr/buttonStyleSmall"  
+			        android:text="@string/prcoess_sortby_cpu" />
+		
+		</TableRow>
+	</TableLayout>
+   <LinearLayout android:layout_width="match_parent" 
+                 android:orientation="vertical" 
+                 android:layout_height="match_parent" >
+       <LinearLayout android:layout_weight="1" 
+                     android:layout_width="fill_parent" 
+                     android:layout_height="fill_parent" 
+                     android:orientation="vertical">
+           <ListView android:smoothScrollbar="true" 
+                     android:id="@android:id/list" 
+                     android:layout_height="fill_parent" 
+                     android:scrollingCache="true" 
+                     android:layout_weight="1" 
+                     android:clickable="true"
+                     android:focusable="true" 
+    			     android:focusableInTouchMode="false"
+                     android:layout_width="fill_parent" />
+           <TextView android:id="@+id/empty" 
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textColor="?android:attr/textColorSecondary" 
+                     android:layout_height="fill_parent" 
+                     android:text="@string/process_loading" 
+                     android:layout_width="fill_parent" />
+       </LinearLayout>
+       <TableLayout android:layout_height="wrap_content" 
+                    android:stretchColumns="3" 
+                    android:layout_width="fill_parent">
+           <TableRow>
+               <CheckBox android:text="@string/process_freeze_title" 
+                         android:id="@+id/process_list_freeze" 
+			             android:textAppearance="?android:attr/textAppearanceMedium"
+					     android:layout_width="wrap_content"  />  
+               <TextView android:padding="20dip" 
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:layout_height="wrap_content" 
+                         android:layout_width="wrap_content" />
+               <TextView android:padding="3dip" 
+                         android:layout_height="wrap_content" 
+                         android:gravity="left" 
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:textColor="?android:attr/textColorSecondary" 
+                         android:text="@string/process_count_title" 
+                         android:layout_width="wrap_content" />
+               <TextView android:id="@+id/process_count_value"
+               			 android:textAppearance="?android:attr/textAppearanceMedium"
+               			 android:textColor="?android:attr/textColorSecondary" 
+                         android:padding="3dip"
+                         android:gravity="left" />
+               <TextView android:padding="3dip" />
+               <TextView android:padding="3dip" 
+                         android:layout_height="wrap_content" 
+                         android:gravity="right" 
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:textColor="?android:attr/textColorSecondary" 
+                         android:text="@string/process_usage_title" 
+                         android:layout_width="wrap_content" />
+               <TextView android:id="@+id/process_usage_value" 
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:textColor="?android:attr/textColorSecondary" 
+                         android:padding="6dip" 
+                         android:layout_height="wrap_content" 
+                         android:gravity="right" 
+                         android:width="50sp" 
+                         android:layout_width="wrap_content" />
+           </TableRow>
+       </TableLayout>
+   </LinearLayout>    
+
+</LinearLayout>

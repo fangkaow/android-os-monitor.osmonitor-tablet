@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	<CheckBoxPreference android:title="@string/pref_showsystem_text" 
+						android:key="Exclude_Preference"
+						android:summary="@string/pref_showsystemsum_text" 
+						android:defaultValue="true">
+	</CheckBoxPreference>
+
+	<CheckBoxPreference android:key="IP6to4_Preference" 
+						android:defaultValue="true" 
+						android:title="@string/pref_ip6to4_title" 
+						android:summary="@string/pref_ip6to4sum_title">
+	</CheckBoxPreference>
+
+	<CheckBoxPreference android:defaultValue="false" 
+						android:key="RDNS_Preference" 
+						android:title="@string/pref_rdns_title" 
+						android:summary="@string/pref_rdnssum_title">
+	</CheckBoxPreference>
+
+</PreferenceScreen>

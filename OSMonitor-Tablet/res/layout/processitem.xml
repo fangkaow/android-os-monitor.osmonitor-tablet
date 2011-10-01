@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dip">
+    
+    <ImageView
+        android:id="@+id/processicon"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="6dip" 
+        android:src="@drawable/appicon" />
+
+     <TextView android:textAppearance="?android:attr/textAppearanceMedium"
+     		   android:textColor="?android:attr/textColorSecondary" 
+     		   android:id="@+id/processvalue"
+     		   android:layout_width="wrap_content"
+     		   android:layout_height="fill_parent"
+     		   android:layout_marginRight="6dip"
+     		   android:layout_alignParentRight="true"
+     		   android:layout_alignParentTop="true"
+     		   android:layout_alignParentBottom="true"
+     		   android:gravity="center_vertical"
+     		   android:text="00"/>  
+        
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="?android:attr/textColorSecondary"
+        android:id="@+id/processname"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/processvalue"
+        android:layout_toRightOf="@+id/processicon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:paddingRight="5dip"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:text="Empty" />
+
+</RelativeLayout>

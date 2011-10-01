@@ -1,0 +1,12 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header android:fragment="com.eolwral.osmonitor.tablet.preferences.Preferences$MainFragment"
+            android:icon="@drawable/preference_main"
+            android:title="@string/pref_main_title"
+            android:summary="@string/pref_mainsum_title" />
+            
+    <header android:fragment="com.eolwral.osmonitor.tablet.preferences.Preferences$SubFragment"
+            android:icon="@drawable/preference_sub"
+            android:title="@string/pref_sub_title"
+            android:summary="@string/pref_subsum_title" />
+</preference-headers>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:gravity="right">
+    <TableLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:stretchColumns="0" >
+        
+        <TableRow>
+            <TextView android:padding="3dip" 
+            		  android:text="@string/network_interface"
+            		  android:textStyle="bold"
+            		  android:gravity="center" 
+            		  android:textAppearance="?android:attr/textAppearanceMedium"
+        	          android:textColor="?android:attr/textColorSecondary" />
+            		  
+			<TextView android:layout_width="wrap_content" 
+					  android:layout_height="wrap_content"
+					  android:gravity="right"
+					  android:padding="3dip" 
+					  android:textAppearance="?android:attr/textAppearanceMedium"
+        	          android:textColor="?android:attr/textColorSecondary" 
+					  android:text="@string/network_status"
+					  android:textStyle="bold" />
+		
+		</TableRow>
+	</TableLayout>    
+   <LinearLayout android:layout_weight="1" 
+                 android:layout_width="fill_parent" 
+                 android:layout_height="fill_parent" 
+                 android:orientation="vertical">
+	   	<ListView android:smoothScrollbar="true" 
+    	         android:id="@android:id/list" 
+        	     android:layout_height="fill_parent" 
+            	 android:scrollingCache="true" 
+    	         android:clickable="true"
+        	     android:focusable="true" 
+     	    	 android:focusableInTouchMode="false"
+	             android:layout_width="fill_parent" />
+   		<TextView android:id="@+id/networkempty" 
+    	         android:textAppearance="?android:attr/textAppearanceMedium"
+        	     android:textColor="?android:attr/textColorSecondary" 
+            	 android:layout_height="fill_parent" 
+    	         android:layout_width="fill_parent" />
+   </LinearLayout>
+</LinearLayout>

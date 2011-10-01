@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+				  android:title="@string/log_filter_text">
+		<CheckBoxPreference android:title="@string/log_filterenable_text" 
+							android:key="DMESGEnable_Preference" 
+							android:defaultValue="false">
+		</CheckBoxPreference>
+		
+		<EditTextPreference android:dialogTitle="@string/log_filterstr_text" 
+							android:title="@string/log_filterstr_text" 
+							android:key="DMESGStr_Preference" 
+							android:dependency="DMESGEnable_Preference">
+		</EditTextPreference>
+		
+		<ListPreference android:entries="@array/dmesg_level_list" 
+						android:key="DMESGLevel_Preference" 
+						android:dialogTitle="@string/log_filterlevel_text" 
+						android:title="@string/log_filterlevel_text" 
+						android:dependency="DMESGEnable_Preference" 
+						android:defaultValue="8" android:entryValues="@array/dmesg_level_value">
+		</ListPreference>
+		<com.eolwral.osmonitor.tablet.log.ExportPreference
+		                 android:key="DMESGExport_Preference"
+		                 android:title="@string/log_export_title"
+		                 logType="dmesg" />
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="menu_title">
+        <item>程序</item>
+        <item>網路</item>
+        <item>連線</item>
+        <item>雜項</item>
+        <item>訊息</item>
+        <item>喜好設定</item>
+    </string-array>
+    
+</resources>

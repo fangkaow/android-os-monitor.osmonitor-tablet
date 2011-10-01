@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- Application -->
+<string name="app_name">OS Monitor</string>
+<string name="app_title">OS Monitor 1.0.2</string>
+
+<!-- StatusBar -->
+<string name="bar_title">OS Monitor</string>
+<string name="bar_text">Running in background</string>
+ 
+<!-- Process -->
+<string name="process_memory_total_title">MEM:</string>
+<string name="prcoess_sortby_cpu">CPU%</string>
+<string name="prcoess_sortby_mem">MEM%</string>
+<string name="process_loading">Loading..</string>
+<string name="process_freeze_title">Freeze</string>
+<string name="process_count_title">Count:</string>
+<string name="process_usage_title">CPU Usage:</string>
+<string name="process_detail_title">Detail</string>
+<string name="process_kill_title">Kill</string>
+<string name="process_switch_title">Switch</string>
+<string name="process_log_title">Log</string>
+<string name="process_nice_title">Nice</string>
+ 
+<!-- Process Detail -->
+<string name="process_name_title">Name</string>
+<string name="process_info_title">Detail Information</string>
+<string name="process_package_title">Package</string>
+<string name="process_pid_title">PID</string>
+<string name="process_uid_title">UID</string>
+<string name="process_threads_title">Threads</string>
+<string name="process_memory_title">Memory</string>
+<string name="process_memoryrss_title">Memory(RSS)</string>
+<string name="process_memorypss_title">Memory(PSS)</string>
+<string name="process_time_title">Start Time</string>
+<string name="process_stime_title">STime</string>
+<string name="process_utime_title">UTime</string>
+<string name="process_status_title">Status</string>
+
+<!-- Process Status -->
+<string name="process_status_zombie">Zombie</string>
+<string name="process_status_sleep">Sleep</string>
+<string name="process_status_running">Running</string>
+<string name="process_status_waitio">Wait IO</string>
+<string name="process_status_stop">Stop</string>
+<string name="process_status_unknown">Unknown</string>
+
+<!-- Network Start -->
+
+<!-- Header -->
+<string name="network_interface">Interface</string>
+<string name="network_ip">IPv4</string>
+<string name="network_ip6">IPv6</string>
+
+<!-- Additional -->
+<string name="network_mac_title">MAC</string>
+<string name="network_rx_title">Rx</string>
+<string name="network_tx_title">Tx</string>
+<string name="network_status">Status</string>
+<string name="network_show_up">Up</string>
+<string name="network_show_down">Down</string>
+<string name="network_show_dis">Disable</string>
+
+<!-- Status -->
+<string name="network_status_up">up</string>
+<string name="network_status_down">down</string>
+<string name="network_status_broadcast">broadcast</string>
+<string name="network_status_loopback">loopback</string>
+<string name="network_status_p2p">point-to-point</string>
+<string name="network_status_running">running</string>
+<string name="network_status_multicast">multicast</string>
+
+<!-- Network End -->
+
+<!-- Connection Start -->
+
+<!-- Header -->
+<string name="connection_protocol_title">Proto</string>
+<string name="connection_localremote_title">Local / Remote IP</string>
+
+<!-- Map -->
+<string name="connection_dns_title">DNS</string>
+<string name="connection_ip_title">IP</string>
+<string name="connection_country_title">Country</string>
+<string name="connection_region_title">Region</string>
+<string name="connection_isp_title">ISP</string>
+<string name="connection_org_title">Organization</string>
+<string name="connection_lat_title">Latitude</string>
+<string name="connection_long_title">Longitude</string>
+<string name="connection_whois_title">WHOIS</string>
+
+<!-- Connection End -->
+
+
+<!-- Misc Start -->
+<string name="misc_more_title">More...</string>
+
+<!-- CPU -->
+<string name="misc_processor_title">CPU</string>
+<string name="misc_processor_freq_title">Frequency</string>
+<string name="misc_processor_scal_title">Scaling</string>
+<string name="misc_processor_gov_title">Governor</string>
+<string name="misc_processor_tmp_title">Temperature</string>
+<string name="misc_processor_cur_title">Current</string>
+<string name="misc_processor_num_title">Core</string>
+<string name="misc_processor_freq_max_title">Frequency Max</string>
+<string name="misc_processor_freq_min_title">Frequency Min</string>
+
+<!-- Battery -->
+<string name="misc_battery_title">Battery</string>
+<string name="misc_status_title">Status</string>
+<string name="misc_health_title">Health</string>
+<string name="misc_technology_title">Technology</string>
+<string name="misc_capacity_title">Capacity</string>
+<string name="misc_voltage_title">Voltage</string>
+<string name="misc_temperature_title">Temperature</string>
+<string name="misc_power_title">Power</string>
+<string name="misc_acpower_text">AC</string>
+<string name="misc_usbpower_text">USB</string>
+<string name="misc_nopower_text">None</string>
+
+<!-- Disk -->
+<string name="misc_filesystem_title">FileSystem</string>
+<string name="misc_disktotal_text">Total</string>
+<string name="misc_diskused_text">Used</string>
+<string name="misc_diskavailable_text">Available</string>
+
+<!-- Misc End -->
+
+
+<!-- Log Start -->
+
+<string name="logcat_count_title">Count:</string>
+<string name="logcat_type_linux_title">Linux</string>
+<string name="logcat_type_android_title">Android</string>
+<string name="logcat_expert_title">Expert</string>
+<string name="logcat_longmsg_title">Message too long!! \nPlease click it to show..</string>
+
+<!-- Export -->
+<string name="log_export_title">Export Log</string>
+<string name="log_format_title">HTML Format</string>
+<string name="log_exportfile_title">Input File Name</string>
+<string name="log_exportexist_title">File already exist!</string>
+<string name="log_exportdone_title">Export OK!</string>
+
+<!-- Message -->
+<string name="logcat_source_text">Ring Buffer</string>
+<string name="log_filter_text">Filter</string>
+<string name="log_filterenable_text">Enable Filtering</string>
+<string name="log_filterstr_text">Tag Filter</string>
+<string name="log_filterpid_text">PID Filter</string>
+<string name="log_filterlevel_text">Filter Log</string>
+
+
+<!-- Log End -->
+
+
+<!-- Preferences Start -->
+<string name="pref_main_title">Global</string>
+<string name="pref_mainsum_title">OS Monitor Global Settings</string>
+<string name="pref_sub_title">Function</string>
+<string name="pref_subsum_title">Sub-Functions Detail Settings</string>
+<string name="pref_updatetime_title">Update Interval (Seconds)</string>
+<string name="pref_updatetimesum_title">refresh interval for all</string>
+<string name="pref_cpuusage_text">Show CPU Usage</string>
+<string name="pref_cpuusagesum_text">show an animated CPU meter icon in notification area</string>
+<string name="pref_autostart_text">Autostart</string>
+<string name="pref_autostartsum_text">autostart applications on bootup</string>
+<string name="pref_tempvalue_text">Show Celsius</string>
+<string name="pref_tempvaluesum_text">toggle Celsius/Fahrenheit units</string>
+<string name="pref_iconbarcolor_title">Notification Icon Color</string>
+<string name="pref_showsystem_text">Hide System Process</string>
+<string name="pref_showsystemsum_text">hide any process contains "/system/" or uid equal 0 (root)</string>
+<string name="pref_ip6to4_title">IPv6 to IPv4</string>
+<string name="pref_ip6to4sum_title">force convert IPv6 to IPv4</string>
+<string name="pref_rdns_title">Lookup DNS</string>
+<string name="pref_rdnssum_title">convert ip to dns</string>
+
+<!-- Preferences End -->
+
+<!-- Common -->
+<string name="common_button_ok">OK</string>
+<string name="common_button_cancel">Cancel</string>
+
+<!-- Help -->
+<string name="helpinfo">Version: 1.0.2\n\nIcon:\n Ultimate Gnome.\n\nWhois API:\n http://en.utrace.de\n\n</string>
+
+</resources>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!-- Application -->
+<string name="app_name">系统监控</string>
+<string name="app_title">系统监控 2.0.0</string>
+
+<!-- StatusBar -->
+<string name="bar_title">系统监控</string>
+<string name="bar_text">背景执行中...</string>
+ 
+<!-- Process -->
+<string name="process_memory_total_title">内存:</string>
+<string name="prcoess_sortby_cpu">负载%</string>
+<string name="prcoess_sortby_mem">内存%</string>
+<string name="process_loading">载入中...</string>
+<string name="process_count_title">数量:</string>
+<string name="process_usage_title">CPU 使用量:</string>
+<string name="process_freeze_title">暂停更新</string>
+<string name="process_detail_title">详细资料</string>
+<string name="process_kill_title">终止</string>
+<string name="process_switch_title">切换</string>
+<string name="process_log_title">讯息</string>
+<string name="process_nice_title">优先权</string>
+
+<!-- Process Detail -->
+<string name="process_name_title">名称</string>
+<string name="process_info_title">详细信息</string>
+<string name="process_package_title">包装名称</string>
+<string name="process_pid_title">程序 ID</string>
+<string name="process_uid_title">使用者 ID</string>
+<string name="process_threads_title">线程</string>
+<string name="process_memory_title">内存</string>
+<string name="process_memoryrss_title">内存(RSS)</string>
+<string name="process_memorypss_title">内存(PSS)</string>
+<string name="process_time_title">开始时间</string>
+<string name="process_stime_title">系统时间</string>
+<string name="process_utime_title">使用者时间</string>
+<string name="process_status_title">状态</string>
+
+<!-- Process Status -->
+<string name="process_status_zombie">殭尸</string>
+<string name="process_status_sleep">休息中</string>
+<string name="process_status_running">执行中</string>
+<string name="process_status_waitio">等待 IO</string>
+<string name="process_status_stop">停止</string>
+<string name="process_status_unknown">未知</string>
+
+<!-- Network Start -->
+
+<!-- Header -->
+<string name="network_interface">界面</string>
+<string name="network_ip">IPv4</string>
+<string name="network_ip6">IPv6</string>
+
+<!-- Additional -->
+<string name="network_mac_title">MAC</string>
+<string name="network_rx_title">接收</string>
+<string name="network_tx_title">传送</string>
+<string name="network_status">状态</string>
+<string name="network_show_up">启用</string>
+<string name="network_show_down">停用</string>
+<string name="network_show_dis">未设定</string>
+
+<!-- Status -->
+<string name="network_status_up">启用</string>
+<string name="network_status_down">停用</string>
+<string name="network_status_broadcast">广拨</string>
+<string name="network_status_loopback">回送回路</string>
+<string name="network_status_p2p">点对点</string>
+<string name="network_status_running">执行中</string>
+<string name="network_status_multicast">群体广播</string>
+
+<!-- Network End -->
+
+<!-- Connection Start -->
+
+<!-- Header -->
+<string name="connection_protocol_title">协定</string>
+<string name="connection_localremote_title">本地 / 远程 IP</string>
+
+<!-- Map -->
+<string name="connection_dns_title">DNS</string>
+<string name="connection_ip_title">IP</string>
+<string name="connection_country_title">国家</string>
+<string name="connection_region_title">区域</string>
+<string name="connection_isp_title">ISP</string>
+<string name="connection_org_title">组织</string>
+<string name="connection_lat_title">纬度</string>
+<string name="connection_long_title">经度</string>
+<string name="connection_whois_title">WHOIS</string>
+
+<!-- Connection End -->
+
+
+<!-- Misc Start -->
+<string name="misc_more_title">更多</string>
+
+<!-- CPU -->
+<string name="misc_processor_title">CPU</string>
+<string name="misc_processor_freq_title">频率范围</string>
+<string name="misc_processor_scal_title">工作范围</string>
+<string name="misc_processor_gov_title">调节器</string>
+<string name="misc_processor_tmp_title">温度</string>
+<string name="misc_processor_cur_title">目前频率</string>
+<string name="misc_processor_num_title">核心</string>
+<string name="misc_processor_freq_max_title">最大频率</string>
+<string name="misc_processor_freq_min_title">最小频率</string>
+
+<!-- Battery -->
+<string name="misc_battery_title">电池</string>
+<string name="misc_status_title">状态</string>
+<string name="misc_health_title">健康情况</string>
+<string name="misc_technology_title">种类</string>
+<string name="misc_capacity_title">剩余电量</string>
+<string name="misc_voltage_title">电压</string>
+<string name="misc_temperature_title">温度</string>
+<string name="misc_power_title">电力</string>
+<string name="misc_acpower_text">交流电</string>
+<string name="misc_usbpower_text">USB</string>
+<string name="misc_nopower_text">无</string>
+
+<!-- Disk -->
+<string name="misc_filesystem_title">文件系统</string>
+<string name="misc_disktotal_text">总共</string>
+<string name="misc_diskused_text">已使用</string>
+<string name="misc_diskavailable_text">未使用</string>
+
+<!-- Misc End -->
+
+
+<!-- Log Start -->
+
+<string name="logcat_count_title">数量:</string>
+<string name="logcat_type_linux_title">Linux</string>
+<string name="logcat_type_android_title">Android</string>
+<string name="logcat_expert_title">专家</string>
+<string name="logcat_longmsg_title">Message too long!! \nPlease click it to show..</string>
+
+<!-- Export -->
+<string name="log_export_title">导出记录</string>
+<string name="log_format_title">HTML格式</string>
+<string name="log_exportfile_title">汇出档名</string>
+<string name="log_exportexist_title">档案已存在</string>
+<string name="log_exportdone_title">汇出成功!</string>
+
+<!-- Message -->
+<string name="logcat_source_text">数据源</string>
+<string name="log_filter_text">设定过滤条件</string>
+<string name="log_filterenable_text">启用过滤</string>
+<string name="log_filterstr_text">Tag 过滤</string>
+<string name="log_filterpid_text">PID 过滤</string>
+<string name="log_filterlevel_text">Log 类型</string>
+
+
+<!-- Log End -->
+
+
+<!-- Preferences Start -->
+<string name="pref_main_title">全局设定</string>
+<string name="pref_mainsum_title">OS Monitor 全局设定</string>
+<string name="pref_sub_title">功能设定</string>
+<string name="pref_subsum_title">子功能详细设定</string>
+<string name="pref_updatetime_title">更新时间(秒)</string>
+<string name="pref_updatetimesum_title">整个 UI 更新时间</string>
+<string name="pref_cpuusage_text">显示CPU状态图标</string>
+<string name="pref_cpuusagesum_text">在状态栏显示CPU使用率图标</string>
+<string name="pref_autostart_text">开机时启动</string>
+<string name="pref_autostartsum_text">随系统启动时执行</string>
+<string name="pref_tempvalue_text">使用 华氏</string>
+<string name="pref_tempvaluesum_text">切换 华氏/摄氏 显示</string>
+<string name="pref_iconbarcolor_title">图示颜色</string>
+<string name="pref_showsystem_text">隐藏系统程序</string>
+<string name="pref_showsystemsum_text">隐藏路径有/system/或用户为 root的程序</string>
+<string name="pref_ip6to4_title">IPv6 转换  IPv4</string>
+<string name="pref_ip6to4sum_title">强制转换  IPv6 为 IPv4</string>
+<string name="pref_rdns_title">查询 DNS</string>
+<string name="pref_rdnssum_title">转换  IP 至  DNS</string>
+
+<!-- Preferences End -->
+
+<!-- Common -->
+<string name="common_button_ok">确定</string>
+<string name="common_button_cancel">取消</string>
+
+<!-- Help -->
+<string name="helpinfo">版本: 2.0.0\n\n图示来源:\n Ultimate Gnome.\n\nWhois API:\n http://en.utrace.de\n\n</string>
+
+</resources>

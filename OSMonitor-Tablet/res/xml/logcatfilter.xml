@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+				  android:title="@string/log_filter_text">
+			<ListPreference android:key="LOGCATSource_Preference" 
+							android:dialogTitle="@string/logcat_source_text" 
+							android:title="@string/logcat_source_text" 
+							android:entries="@array/logcat_source_list" 
+							android:entryValues="@array/logcat_source_value" 
+							android:defaultValue="0">
+			</ListPreference>
+		
+			<CheckBoxPreference android:title="@string/log_filterenable_text" 
+								android:key="LOGCATEnable_Preference" 
+								android:defaultValue="false">
+			</CheckBoxPreference>
+
+			<ListPreference android:key="LOGCATLevel_Peference" 
+							android:dialogTitle="@string/log_filterlevel_text" 
+							android:title="@string/log_filterlevel_text" 
+							android:dependency="LOGCATEnable_Preference" 
+							android:entries="@array/logcat_level_list" 
+							android:entryValues="@array/logcat_level_value" 
+							android:defaultValue="0">
+			</ListPreference>
+		
+			<EditTextPreference android:key="LOGCATPID_Preference" 
+								android:dependency="LOGCATEnable_Preference" 
+								android:dialogTitle="@string/log_filterpid_text" 
+								android:title="@string/log_filterpid_text" 
+								android:defaultValue="0">
+			</EditTextPreference>
+		
+			<EditTextPreference android:dialogTitle="@string/log_filterstr_text" 
+								android:title="@string/log_filterstr_text" 
+								android:key="LOGCATStr_Peference" 
+								android:dependency="LOGCATEnable_Preference">
+			</EditTextPreference>
+			
+			<com.eolwral.osmonitor.tablet.log.ExportPreference
+		                 android:key="LOGCATExport_Preference"
+		                 android:title="@string/log_export_title"
+		                 logType="logcat" />
+</PreferenceScreen>

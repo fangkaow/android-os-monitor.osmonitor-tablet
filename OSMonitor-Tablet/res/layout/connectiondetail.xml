@@ -1,0 +1,164 @@
+<ScrollView android:orientation="vertical" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+			xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:orientation="vertical" 
+              android:layout_width="fill_parent" 
+              android:layout_height="fill_parent">
+    <LinearLayout android:id="@+id/connection_mapwindow"
+    			  android:layout_width="fill_parent" 
+                  android:layout_height="150sp"
+                  android:layout_weight="1" >
+        <com.google.android.maps.MapView
+        		  android:id="@+id/connection_mapview"
+        		  android:layout_width="fill_parent"
+        		  android:layout_height="fill_parent"
+        		  android:clickable="true"
+        		  android:apiKey="0N4HYg91PN1-cGgp3exBmvC1AdzeiGYzp7C3V7g" />
+                  
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" 
+                  android:layout_height="fill_parent"
+                  android:layout_weight="1" >
+        <TableLayout android:layout_width="match_parent" 
+                     android:layout_height="match_parent" >
+            <TableRow android:layout_height="wrap_content" 
+                      android:layout_width="wrap_content" 
+                      android:background="#80444444" 
+                      android:layout_margin="2dip" >
+                <TextView android:layout_height="wrap_content" 
+                          android:layout_width="wrap_content" 
+                          android:padding="3dip" 
+                          android:text="@string/connection_dns_title" 
+                          android:textColor="?android:attr/textColorSecondary" 
+                          android:textAppearance="?android:attr/textAppearanceMedium" />
+                <TextView android:layout_width="wrap_content" 
+                          android:padding="3dip" 
+                          android:textColor="?android:attr/textColorSecondary" 
+                          android:id="@+id/connection_dns_value" 
+                          android:textAppearance="?android:attr/textAppearanceMedium" 
+                          android:layout_height="wrap_content" />
+            </TableRow>
+            <TableRow android:layout_height="wrap_content"
+                      android:layout_width="wrap_content" 
+                      android:background="#80444444" 
+                      android:layout_margin="2dip" >
+                <TextView android:padding="3dip" 
+                		  android:text="@string/connection_ip_title" 
+                		  android:textColor="?android:attr/textColorSecondary" 
+                		  android:textAppearance="?android:attr/textAppearanceMedium" 
+                		  android:layout_width="wrap_content" 
+                		  android:layout_height="wrap_content" />
+                <TextView android:id="@+id/connection_ip_value"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+            			  android:textColor="?android:attr/textColorSecondary" 
+                          android:layout_width="wrap_content" 
+                          android:layout_height="wrap_content" 
+                          android:padding="3dip" />
+            </TableRow>
+            <TableRow android:layout_height="wrap_content"
+                      android:layout_width="wrap_content" 
+                      android:background="#80444444" 
+                      android:layout_margin="2dip" >
+                <TextView android:padding="3dip" 
+                		  android:text="@string/connection_country_title" 
+                		  android:textColor="?android:attr/textColorSecondary" 
+                		  android:textAppearance="?android:attr/textAppearanceMedium" 
+                		  android:layout_width="wrap_content" 
+                		  android:layout_height="wrap_content" />
+                <TextView android:id="@+id/connection_country_value"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+            			  android:textColor="?android:attr/textColorSecondary" 
+                          android:layout_width="wrap_content" 
+                          android:layout_height="wrap_content" 
+                          android:padding="3dip" />
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" 
+                      android:layout_width="wrap_content" 
+                      android:background="#80444444" 
+                      android:layout_margin="2dip" >
+                <TextView android:text="@string/connection_region_title" 
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+            			  android:textColor="?android:attr/textColorSecondary" 
+                          android:layout_height="wrap_content" 
+                          android:layout_width="wrap_content" 
+                          android:padding="3dip" />
+                <TextView android:id="@+id/connection_region_value"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+            			  android:textColor="?android:attr/textColorSecondary" 
+                          android:layout_width="wrap_content" 
+                          android:layout_height="wrap_content" 
+                          android:padding="3dip" />
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" 
+                      android:layout_width="wrap_content" 
+                      android:background="#80444444" 
+                      android:layout_margin="2dip" >
+                <TextView android:text="@string/connection_isp_title"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+            			  android:textColor="?android:attr/textColorSecondary" 
+                          android:layout_height="wrap_content" 
+                          android:layout_width="wrap_content" 
+                          android:padding="3dip" />
+                <TextView android:id="@+id/connection_isp_value"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+            			  android:textColor="?android:attr/textColorSecondary" 
+                          android:layout_width="wrap_content" 
+                          android:layout_height="wrap_content" 
+                          android:padding="3dip" />
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" 
+                      android:layout_width="wrap_content" 
+                      android:background="#80444444"
+                      android:layout_margin="2dip" >
+                <TextView android:text="@string/connection_org_title" 
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+            			  android:textColor="?android:attr/textColorSecondary" 
+                          android:layout_height="wrap_content" 
+                          android:layout_width="wrap_content" 
+                          android:padding="3dip" />
+                <TextView android:id="@+id/connection_org_value"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+            			  android:textColor="?android:attr/textColorSecondary" 
+                          android:layout_width="wrap_content" 
+                          android:layout_height="wrap_content" 
+                          android:padding="3dip" />
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" 
+                      android:layout_width="wrap_content" 
+                      android:background="#80444444" 
+                      android:layout_margin="2dip" >
+                <TextView android:text="@string/connection_lat_title"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+            			  android:textColor="?android:attr/textColorSecondary" 
+                		  android:layout_height="wrap_content" 
+                		  android:layout_width="wrap_content" 
+                		  android:padding="3dip" />
+                <TextView android:id="@+id/connection_lat_value" 
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+            			  android:textColor="?android:attr/textColorSecondary" 
+                          android:layout_width="wrap_content" 
+                          android:layout_height="wrap_content" 
+                          android:padding="3dip" />
+            </TableRow>
+            <TableRow android:layout_height="wrap_content" 
+                      android:layout_width="wrap_content" 
+                      android:background="#80444444"
+                      android:layout_margin="2dip" >
+                <TextView android:text="@string/connection_long_title"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+            			  android:textColor="?android:attr/textColorSecondary" 
+                          android:layout_height="wrap_content" 
+                          android:layout_width="wrap_content" 
+                          android:padding="3dip" />
+                <TextView android:id="@+id/connection_long_value"
+                          android:textAppearance="?android:attr/textAppearanceMedium"
+            			  android:textColor="?android:attr/textColorSecondary" 
+                          android:layout_width="wrap_content" 
+                          android:layout_height="wrap_content" 
+                          android:padding="3dip" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>        
+</ScrollView>
